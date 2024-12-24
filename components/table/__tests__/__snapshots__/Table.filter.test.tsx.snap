@@ -5,46 +5,54 @@ exports[`Table.filter clearFilters should support params 1`] = `
   class="ant-dropdown-custom-view"
   id="customFilter"
 >
-  <span
+  <button
     id="setNoParams"
+    type="button"
   >
     setSelectedKeys
-  </span>
-  <span
+  </button>
+  <button
     id="resetNoParams"
+    type="button"
   >
     Reset
-  </span>
-  <span
+  </button>
+  <button
     id="setConfirm"
+    type="button"
   >
     setSelectedKeys
-  </span>
-  <span
+  </button>
+  <button
     id="resetConfirm"
+    type="button"
   >
     Reset
-  </span>
-  <span
+  </button>
+  <button
     id="setClose"
+    type="button"
   >
     setSelectedKeys
-  </span>
-  <span
+  </button>
+  <button
     id="resetClose"
+    type="button"
   >
     Reset
-  </span>
-  <span
+  </button>
+  <button
     id="setParams"
+    type="button"
   >
     setSelectedKeys
-  </span>
-  <span
+  </button>
+  <button
     id="resetParams"
+    type="button"
   >
     Reset
-  </span>
+  </button>
 </div>
 `;
 
@@ -117,6 +125,7 @@ exports[`Table.filter renders custom filter icon as ReactNode 1`] = `
                 <tr>
                   <th
                     class="ant-table-cell"
+                    scope="col"
                   >
                     <div
                       class="ant-table-filter-column"
@@ -221,6 +230,7 @@ exports[`Table.filter renders custom filter icon as string correctly 1`] = `
                 <tr>
                   <th
                     class="ant-table-cell"
+                    scope="col"
                   >
                     <div
                       class="ant-table-filter-column"
@@ -331,6 +341,7 @@ exports[`Table.filter renders custom filter icon with right Tooltip title 1`] = 
                 <tr>
                   <th
                     class="ant-table-cell"
+                    scope="col"
                   >
                     <div
                       class="ant-table-filter-column"
@@ -350,27 +361,22 @@ exports[`Table.filter renders custom filter icon with right Tooltip title 1`] = 
                         >
                           Tooltip
                         </span>
-                        <div>
+                        <div
+                          class="ant-tooltip ant-zoom-big-fast-appear ant-zoom-big-fast-appear-prepare ant-zoom-big-fast ant-tooltip-placement-top"
+                          style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
+                        >
                           <div
-                            class="ant-tooltip ant-zoom-big-fast-appear ant-zoom-big-fast-appear-prepare ant-zoom-big-fast"
-                            style="opacity: 0;"
+                            class="ant-tooltip-arrow"
+                            style="position: absolute; bottom: 0px; left: 0px;"
+                          />
+                          <div
+                            class="ant-tooltip-content"
                           >
                             <div
-                              class="ant-tooltip-content"
+                              class="ant-tooltip-inner"
+                              role="tooltip"
                             >
-                              <div
-                                class="ant-tooltip-arrow"
-                              >
-                                <span
-                                  class="ant-tooltip-arrow-content"
-                                />
-                              </div>
-                              <div
-                                class="ant-tooltip-inner"
-                                role="tooltip"
-                              >
-                                title
-                              </div>
+                              title
                             </div>
                           </div>
                         </div>
@@ -461,6 +467,7 @@ exports[`Table.filter renders filter correctly 1`] = `
                 <tr>
                   <th
                     class="ant-table-cell"
+                    scope="col"
                   >
                     <div
                       class="ant-table-filter-column"
@@ -575,7 +582,7 @@ exports[`Table.filter renders menu correctly 1`] = `
           class="ant-checkbox-wrapper"
         >
           <span
-            class="ant-checkbox"
+            class="ant-checkbox ant-wave-target"
           >
             <input
               class="ant-checkbox-input"
@@ -604,7 +611,7 @@ exports[`Table.filter renders menu correctly 1`] = `
           class="ant-checkbox-wrapper"
         >
           <span
-            class="ant-checkbox"
+            class="ant-checkbox ant-wave-target"
           >
             <input
               class="ant-checkbox-input"
@@ -639,7 +646,7 @@ exports[`Table.filter renders menu correctly 1`] = `
           Title
         </span>
         <span
-          class="ant-dropdown-menu-submenu-expand-icon"
+          class="ant-dropdown-menu-submenu-expand-icon ant-dropdown-menu-submenu-arrow"
         >
           <span
             aria-label="right"
@@ -672,7 +679,7 @@ exports[`Table.filter renders menu correctly 1`] = `
     class="ant-table-filter-dropdown-btns"
   >
     <button
-      class="ant-btn ant-btn-link ant-btn-sm"
+      class="ant-btn ant-btn-link ant-btn-color-primary ant-btn-variant-link ant-btn-sm"
       disabled=""
       type="button"
     >
@@ -681,7 +688,7 @@ exports[`Table.filter renders menu correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn ant-btn-primary ant-btn-sm"
+      class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-btn-sm"
       type="button"
     >
       <span>
@@ -715,7 +722,7 @@ exports[`Table.filter renders radio filter correctly 1`] = `
           class="ant-radio-wrapper"
         >
           <span
-            class="ant-radio"
+            class="ant-radio ant-wave-target"
           >
             <input
               class="ant-radio-input"
@@ -744,7 +751,7 @@ exports[`Table.filter renders radio filter correctly 1`] = `
           class="ant-radio-wrapper"
         >
           <span
-            class="ant-radio"
+            class="ant-radio ant-wave-target"
           >
             <input
               class="ant-radio-input"
@@ -779,7 +786,7 @@ exports[`Table.filter renders radio filter correctly 1`] = `
           Title
         </span>
         <span
-          class="ant-dropdown-menu-submenu-expand-icon"
+          class="ant-dropdown-menu-submenu-expand-icon ant-dropdown-menu-submenu-arrow"
         >
           <span
             aria-label="right"
@@ -812,7 +819,7 @@ exports[`Table.filter renders radio filter correctly 1`] = `
     class="ant-table-filter-dropdown-btns"
   >
     <button
-      class="ant-btn ant-btn-link ant-btn-sm"
+      class="ant-btn ant-btn-link ant-btn-color-primary ant-btn-variant-link ant-btn-sm"
       disabled=""
       type="button"
     >
@@ -821,7 +828,7 @@ exports[`Table.filter renders radio filter correctly 1`] = `
       </span>
     </button>
     <button
-      class="ant-btn ant-btn-primary ant-btn-sm"
+      class="ant-btn ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-btn-sm"
       type="button"
     >
       <span>
